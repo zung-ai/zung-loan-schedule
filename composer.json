@@ -1,0 +1,31 @@
+{
+    "name": "zung/loan-schedule",
+    "description": "Loan repayment schedules for SACCOs and MFIs: flat and reducing-balance (equal installments or equal principal), grace periods, daily interest, fixed installments. Matches Zung core banking to the cent.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["loan", "amortization", "amortization-schedule", "repayment-schedule", "emi", "flat-rate", "reducing-balance", "sacco", "mfi", "microfinance", "zung"],
+    "homepage": "https://zung.ai",
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5 || ^11.5 || ^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zung\\LoanSchedule\\": "php/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Zung\\LoanSchedule\\Tests\\": "php/tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
